@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,700,900&subset=latin,latin-ext);
+
+body {
+    background:#b3e6ff;
+}
+
+.dashboard-container {
+    width: 306px;
+    height:50;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-25px;
+    margin-left:-153px;
+}
+
+.dashboard-container .manage {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:15px;
+    width:150px;
+    height:47px;
+    margin:auto;
+    line-height:47px;
+    border:1px solid white;
+    text-transform:uppercase;
+    color:white;
+    cursor:pointer;
+    background:#66ccff;
+}
+
+.dashboard-container .manage:hover{
+    color:black;
+    background:white;
+}
+
+.dashboard-container .add {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:15px;
+    width:150px;
+    height:47px;
+    margin:auto;
+    line-height:47px;
+    border:1px solid white;
+    text-transform:uppercase;
+    color:white;
+    cursor:pointer;
+    background:#66ccff;
+}
+
+.dashboard-container .add:hover{
+    color:black;
+    background:white;
+}
