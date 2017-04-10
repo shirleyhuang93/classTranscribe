@@ -16,7 +16,6 @@ input[type=text], input[type=password] {
     width:100px;
     height:47px;
     margin:50px auto;
-    line-height:47px;
     border:1px solid white;
     text-transform:uppercase;
     color:white;
@@ -29,7 +28,6 @@ input[type=text], input[type=password] {
     width:183px;
     height:47px;
     margin:50px auto;
-    line-height:47px;
     border:1px solid white;
     text-transform:uppercase;
     color:white;
