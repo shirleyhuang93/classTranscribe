@@ -38,7 +38,7 @@ var exampleTerms = {
 }
 
 
-var homeMustache = fs.readFileSync(mustachePath + 'home.mustache').toString();
+/**var homeMustache = fs.readFileSync(mustachePath + 'home.mustache').toString();
 app.get('/', function (request, response) {
   response.writeHead(200, {
     'Content-Type': 'text/html'
@@ -46,7 +46,7 @@ app.get('/', function (request, response) {
 
   var html = Mustache.render(homeMustache);
   response.end(html);
-});
+});**/
 
 var loginHomePage = fs.readFileSync(mustachePath + 'dashboard.mustache').toString();
 app.get('/', function (request, response) {
