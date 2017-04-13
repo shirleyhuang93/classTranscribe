@@ -58,7 +58,7 @@ app.get('/dashboard', function (request, response) {
   response.end(html);
 });
 
-var viewerMustache = fs.readFileSync(mustachePath + 'viewer.mustache').toString();
+/**var viewerMustache = fs.readFileSync(mustachePath + 'viewer.mustache').toString();
 app.get('/viewer/:className', function (request, response) {
   var className = request.params.className.toLowerCase();
 
@@ -419,7 +419,7 @@ function queueResponse(response, queueName, netId, className, chosenTask, attemp
       });
     }
   });
-}
+}/**
 
 /**
  *  This function moves tasks from the Tasks to PrioritizedTasks queue, if needed.
