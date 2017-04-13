@@ -48,6 +48,16 @@ app.get('/', function (request, response) {
   response.end(html);
 });
 
+var loginHomePage = fs.readFileSync(mustachePath + 'dashboard.mustache').toString();
+app.get('/', function (request, response) {
+  response.writeHead(200, {
+    'Content-Type': 'text/html'
+  });
+
+  var html = Mustache.render(loginHomePage);
+  response.end(html);
+});
+
 var viewerMustache = fs.readFileSync(mustachePath + 'viewer.mustache').toString();
 app.get('/viewer/:className', function (request, response) {
   var className = request.params.className.toLowerCase();
