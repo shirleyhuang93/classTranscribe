@@ -75,7 +75,7 @@ app.get('/viewer/:className', function (request, response) {
   response.end(html);
 });**/
 
-/**var searchMustache = fs.readFileSync(mustachePath + 'search.mustache').toString();
+var searchMustache = fs.readFileSync(mustachePath + 'search.mustache').toString();
 app.get('/:className', function (request, response) {
   var className = request.params.className.toLowerCase();
 
@@ -89,7 +89,7 @@ app.get('/:className', function (request, response) {
   };
   var html = Mustache.render(searchMustache, view);
   response.end(html);
-});**/
+});
 
 var progressDashboardMustache = fs.readFileSync(mustachePath + 'progressDashboard.mustache').toString();
 app.get('/viewProgress/:className/:uuid', function (request, response) {
