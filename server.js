@@ -49,7 +49,7 @@ app.get('/', function (request, response) {
 });
 
 var resetPassword = fs.readFileSync(mustachePath + 'resetPassword.mustache').toString();
-app.get('/reset', function (request, response) {
+app.get('/resetPassword', function (request, response) {
   response.writeHead(200, {
     'Content-Type': 'text/html'
   });
