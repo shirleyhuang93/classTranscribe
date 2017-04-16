@@ -73,7 +73,7 @@ app.get('/viewer/:className', function (request, response) {
   };
   var html = Mustache.render(viewerMustache, view);
   response.end(html);
-});**/e
+});**/
 
 /**var searchMustache = fs.readFileSync(mustachePath + 'search.mustache').toString();
 app.get('/:className', function (request, response) {
