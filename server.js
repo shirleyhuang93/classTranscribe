@@ -48,6 +48,16 @@ app.get('/', function (request, response) {
   response.end(html);
 });
 
+var resetPassword = fs.readFileSync(mustachePath + 'resetPassword.mustache').toString();
+app.get('/reset', function (request, response) {
+  response.writeHead(200, {
+    'Content-Type': 'text/html'
+  });
+
+  var html = Mustache.render(resetPassword);
+  response.end(html);
+});
+
 var loginHomePage = fs.readFileSync(mustachePath + 'dashboard.mustache').toString();
 app.get('/dashboard', function (request, response) {
   response.writeHead(200, {
