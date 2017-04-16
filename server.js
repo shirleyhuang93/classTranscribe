@@ -58,7 +58,7 @@ app.get('/dashboard', function (request, response) {
   response.end(html);
 });
 
-var loginHomePage = fs.readFileSync(mustachePath + 'manageCourse.mustache').toString();
+var manageCoursePage = fs.readFileSync(mustachePath + 'manageCourse.mustache').toString();
 app.get('/manageCourse', function (request, response) {
   response.writeHead(200, {
     'Content-Type': 'text/html'
