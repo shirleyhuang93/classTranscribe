@@ -64,7 +64,7 @@ app.get('/manageCourse', function (request, response) {
     'Content-Type': 'text/html'
   });
 
-  var html = Mustache.render(loginHomePage);
+  var html = Mustache.render(manageCoursePage);
   response.end(html);
 });
 
