@@ -73,9 +73,9 @@ app.get('/viewer/:className', function (request, response) {
   };
   var html = Mustache.render(viewerMustache, view);
   response.end(html);
-});
+});**/e
 
-var searchMustache = fs.readFileSync(mustachePath + 'search.mustache').toString();
+/**var searchMustache = fs.readFileSync(mustachePath + 'search.mustache').toString();
 app.get('/:className', function (request, response) {
   var className = request.params.className.toLowerCase();
 
@@ -89,7 +89,7 @@ app.get('/:className', function (request, response) {
   };
   var html = Mustache.render(searchMustache, view);
   response.end(html);
-});
+});**/
 
 var progressDashboardMustache = fs.readFileSync(mustachePath + 'progressDashboard.mustache').toString();
 app.get('/viewProgress/:className/:uuid', function (request, response) {
@@ -419,7 +419,7 @@ function queueResponse(response, queueName, netId, className, chosenTask, attemp
       });
     }
   });
-}/**
+}
 
 /**
  *  This function moves tasks from the Tasks to PrioritizedTasks queue, if needed.
